@@ -4,6 +4,7 @@ import "./App.css";
 import Numbers from './components/ButtonComponents/NumberButtons/Numbers';
 import Operators from './components/ButtonComponents/OperatorButtons/Operators';
 import Specials from './components/ButtonComponents/SpecialButtons/Specials';
+import Display from './components/DisplayComponents/Display';
 
 
 
@@ -21,12 +22,19 @@ function App() {
 
   return (
     <div className="container">
-      <Logo />
-      <div className="App">
-        {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
-        <Numbers />
-        <Operators />
-        <Specials />
+      <div className="inner-container">
+        <Logo />
+        <Display />
+        <div className="App">
+          {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
+          <div className='app-left'>  
+            <Specials />
+            <Numbers />
+          </div>
+          <div className="app-right">
+            <Operators />
+          </div>
+        </div>
       </div>
     </div>
   );
