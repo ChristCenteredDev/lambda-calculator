@@ -17,7 +17,6 @@ export const Specials = props => {
             special={special}
             addToEquation={props.addToEquation}
             setValues={props.setValues}
-            setResult={props.setResult}
             values={props.values}
           />
         );

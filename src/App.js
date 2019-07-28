@@ -21,11 +21,9 @@ function App() {
   // Don't forget to pass the functions (and any additional data needed) to the components as props
   
   const [values, setValues] = useState("");
-  const [result, setResult] = useState(0);
 
   const addToEquation = value => {
     setValues(values.concat(value));
-    setResult(values);
   };
 
   const calculate = () => {

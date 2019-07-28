@@ -23,7 +23,6 @@ export const Operators = (props) => {
               operator={operator}
               addToEquation={props.addToEquation}
               setValues={props.setValues}
-              setResult={props.setResult}
               values={props.values}
               calculate={props.calculate}
             />
