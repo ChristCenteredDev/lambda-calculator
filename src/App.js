@@ -25,21 +25,18 @@ function App() {
 
   const addToEquation = value => {
     setValues(values.concat(value));
+    setResult(values);
   };
 
   const calculate = () => {
-    setResult(evaluate(values));
+    setValues(`${evaluate(values)}`);
   };
-
-
-
-
 
   return (
     <div className="container">
       <div className="inner-container">
         <Logo />
-        <Display result={result} />
+        <Display values={values} />
         <div className="App">
           {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
           <div className='app-left'>  
@@ -55,10 +52,6 @@ function App() {
             <Operators addToEquation={addToEquation} calculate={calculate}/>
           </div>
         </div>
-        <br />
-          {result}
-          <br />
-          {"values: " + values}
       </div>
     </div>
   );

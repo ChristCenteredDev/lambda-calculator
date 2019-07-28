@@ -1,11 +1,10 @@
 import React from "react";
 
-export const SpecialButton = ({ special, setValues, setResult, values }) => {
+export const SpecialButton = ({ special, setValues, values }) => {
   const handleSpecial = () => {
     switch (special) {
       case "C":
         setValues("");
-        setResult(0);
         break;
       case "+/-":
         setValues("-" + "(" + values + ")");
