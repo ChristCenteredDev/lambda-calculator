@@ -42,7 +42,6 @@ function App() {
               addToEquation={addToEquation}
               setValues={setValues}
               values={values}
-              setResult={setResult}
             />
             <Numbers addToEquation={addToEquation}/>
           </div>
